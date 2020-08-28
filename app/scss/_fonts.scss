@@ -1,9 +1,11 @@
 @font-face {
-   font-family: 'Roboto';
-   src: url('../fonts/Roboto-Regular.woff2') format('woff2'), 
-        url('../fonts/Roboto-Regular.woff') format('woff'),
-        url('../fonts/Roboto-Regular.ttf') format('truetype');
-   font-weight: 400; /*Насыщенность/начертание шрифта - "жирность"*/
+   font-family: 'HelveticaNeueMedium';
+   src: url('../fonts/HelveticaNeueMedium.woff2') format('woff2'), 
+        url('../fonts/HelveticaNeueMedium.woff') format('woff'),
+        url('../fonts/HelveticaNeueMedium.ttf') format('truetype');
+   font-weight: 600; /*Насыщенность/начертание шрифта - "жирность"*/
    font-style: normal; /*Стилизация шрифта */
    font-display: swap;  /*Метод загрузки шрифта*/
 }
+
+/* font converted using font-converter.net. thank you! */

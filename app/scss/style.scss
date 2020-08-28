@@ -3,10 +3,42 @@
 @import 'mixins';
 @import 'global';
 
-//* squared block
+//* start header
 
+.header {
 
-//* squared block
+   .container--color {
+      background-color: #D8D8D8;
+   }
+
+   &__link {
+      position: relative;
+
+      &::before,
+      &::after {
+         position: absolute;
+         top: 0;
+         z-index: 1;
+         width: 120px;
+         height: 40px;
+         content: '';
+      }
+
+      &::before {
+            left: 0;
+            background-image: url('../images/app.svg');
+         }
+
+      &::after {
+            right: 0;
+            background-image: url('../images/microsoft.svg');
+         }
+
+   }
+   
+}
+
+//* end header
 
 // .selector-item {
 //    /* Позиционирование */
