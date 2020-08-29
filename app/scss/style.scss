@@ -6,32 +6,18 @@
 //* start header
 
 .header {
-   background-color: #D8D8D8;
-
-   &__link {
-      position: relative;
-      height: 100px;
-
-      &::before,
-      &::after {
-         position: absolute;
-         top: 25px;
-         z-index: 1;
-         width: 120px;
-         height: 40px;
-         content: '';
-      }
+   .app-link {
 
       &::before {
             left: 0;
             background-image: url('../images/app.svg');
          }
-
+   
       &::after {
             right: 0;
             background-image: url('../images/microsoft.svg');
          }
-
+   
    }
    
 }
@@ -40,11 +26,12 @@
 
 //* start box-top
 
-.inner__box-top {
+.box-top__button {
+
+   .inner__box {
    display: flex;
    justify-content: flex-start;
-   background-color: #F5F5F5;
-   padding: 80px;
+   }
 }
 
 .button__block-a {
@@ -87,7 +74,51 @@
    }
 }
 
-//* end hbox-top
+//* end box-top
+
+//* start box-middle
+
+.box-top__middle {
+   .inner__box {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+   }
+}
+
+//* end box-middle
+
+//* start box-down
+
+.box-top__down {
+   .inner__box {
+      display: flex;
+      justify-content:flex-end;
+      text-align: end;
+   }
+}
+
+//* end box-down
+
+//* start box-footer
+
+.footer {
+   .app-link {
+
+      &::before {
+            left: 200px;
+            background-image: url('../images/google.svg');
+         }
+   
+      &::after {
+            right: 200px;
+            background-image: url('../images/app-white.svg');
+         }
+   
+   }
+}
+
+//* end box-footer
 
 // .selector-item {
 //    /* Позиционирование */

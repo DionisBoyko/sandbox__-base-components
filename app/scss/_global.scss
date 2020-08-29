@@ -9,15 +9,32 @@ html {
 }
 
 body {
+   padding: 25px 0;
+   background-color: #E5E5E5;
+}
+
+.header,
+.footer {
+   background-color: #D8D8D8;
+}
+
+.btn-box {
+   max-width: 1905px;
    margin: 0 auto;
    font-family: 'HelveticaNeueMedium', 'Verdana', sans-serif;
    color: #ffffff;
-   background-color: #E5E5E5;
+   background-color: #ffffff;
 }
+
 .container {
+   margin: 0 auto;
    max-width: 1550px;
    width: 100%;
-   padding: 10px;
+}
+
+.inner__box {
+   background-color: #F5F5F5;
+   padding: 80px;
 }
 
 .button__block {
@@ -54,5 +71,20 @@ body {
    padding: 7px 20px;
    font-weight: 600;
    font-size: 12px;
+}
+
+.app-link {
+   position: relative;
+   height: 100px;
+
+   &::before,
+   &::after {
+      position: absolute;
+      top: 25px;
+      z-index: 1;
+      width: 120px;
+      height: 40px;
+      content: '';
+   }
 }
 
