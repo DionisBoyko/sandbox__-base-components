@@ -9,14 +9,50 @@ html {
 }
 
 body {
+   margin: 0 auto;
    font-family: 'HelveticaNeueMedium', 'Verdana', sans-serif;
    color: #ffffff;
    background-color: #E5E5E5;
 }
 .container {
-   max-width: 1925px;
+   max-width: 1550px;
    width: 100%;
    padding: 10px;
+}
+
+.button__block {
+   max-width: 140px;
+   widows: 100%;
+   margin-right: 20px;
+}
+
+.wrapper {
    background-color: #ffffff;
+}
+
+.button {
+   display: inline-block;
+   text-transform: uppercase;
+   border-radius: 2px;
+   margin-bottom: 17px;
+}
+
+.button--l {
+   padding: 13px 41px;
+   font-weight: 600;
+   font-size: 14px;
+   border-radius: 3px;
+}
+
+.button--m {
+   padding: 11px 30px;
+   font-weight: 600;
+   font-size: 12px;
+}
+
+.button--s {
+   padding: 7px 20px;
+   font-weight: 600;
+   font-size: 12px;
 }
 
