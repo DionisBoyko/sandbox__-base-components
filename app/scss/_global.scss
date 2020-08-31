@@ -8,6 +8,11 @@ html {
    box-sizing: inherit;
 }
 
+a {
+   text-decoration: none;
+   color: #ffffff;
+}
+
 body {
    padding: 25px 0;
    background-color: #E5E5E5;
@@ -22,7 +27,6 @@ body {
    max-width: 1905px;
    margin: 0 auto;
    font-family: 'HelveticaNeueMedium', 'Verdana', sans-serif;
-   color: #ffffff;
    background-color: #ffffff;
 }
 
@@ -52,6 +56,40 @@ body {
    text-transform: uppercase;
    border-radius: 2px;
    margin-bottom: 17px;
+   transition: 0.3s;
+   
+   &:hover {
+      box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+   }
+
+   &:active {
+      box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.15);
+      border-radius: 3px;
+   }
+
+   &--blue:focus {
+      outline: 3px solid rgba(0, 169, 255, 0.4);
+   }
+
+   &--green:focus {
+      outline: 3px solid rgba(107, 216, 46, 0.4);
+   }
+
+   &--orange:focus {
+      outline: 3px solid rgba(255, 154, 0, 0.4);
+   }
+
+   &--red:focus {
+      outline: 3px solid rgba(255, 67, 69, 0.3);
+   }
+
+   &--white:focus {
+      outline: 3px solid rgba(0, 0, 0, 0.1);
+   }
+
+   &--transparent:focus {
+      outline: 3px solid rgba(0, 0, 0, 0.15);
+   }
 }
 
 .button--l {
